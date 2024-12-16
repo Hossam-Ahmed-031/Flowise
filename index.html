@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowise - Build Your AI Flow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/image.webp" alt="Flowise Logo">
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="https://github.com/FlowiseAI/Flowise" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Build AI Flows with Flowise</h1>
+            <p>Drag & drop UI to build your customized LLM flow</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/FlowiseAI/Flowise" class="cta-primary">Get Started</a>
+                <a href="#about" class="cta-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Flowise</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Drag & Drop Interface</h3>
+                    <p>Build LLM flows easily with our intuitive drag & drop interface. No coding required!</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>LLM Integration</h3>
+                    <p>Integrate with popular LLMs like OpenAI, Hugging Face, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Open Source</h3>
+                    <p>Free and open-source platform for building your AI applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chatbot" class="chatbot-section">
+        <div class="container">
+            <h2>Build Your AI Chatbot</h2>
+            <div class="chatbot-demo">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">chatbot-flow.js</span>
+                    </div>
+                    <pre><code>// Create a new chatflow
+const chatflow = new ChatFlow();
+
+// Add OpenAI node
+chatflow.addNode({
+    type: "llm",
+    model: "gpt-3.5-turbo",
+    temperature: 0.7
+});
+
+// Add conversation memory
+chatflow.addNode({
+    type: "memory",
+    chatHistory: true
+});
+
+// Connect to API endpoint
+chatflow.deploy({
+    endpoint: "/api/chat"
+});</code></pre>
+                </div>
+                <div class="chatbot-preview">
+                    <div class="chat-header">
+                        <img src="images/image.webp" alt="Bot Avatar" class="bot-avatar">
+                        <h3>Flowise Assistant</h3>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message bot">
+                            <span class="avatar">🤖</span>
+                            <div class="text">Hi! I'm your AI assistant. How can I help you today?</div>
+                        </div>
+                        <div class="message user">
+                            <div class="text">How do I create a chatbot with Flowise?</div>
+                            <span class="avatar">👤</span>
+                        </div>
+                        <div class="message bot">
+                            <span class="avatar">🤖</span>
+                            <div class="text">Creating a chatbot with Flowise is easy! Just drag and drop nodes in our visual editor, connect them together, and deploy your flow.</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your message..." disabled>
+                        <button class="send-btn" disabled>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Design Your Flow</h3>
+                    <p>Use our visual editor to design your chatbot's conversation flow with drag-and-drop nodes.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Configure AI Model</h3>
+                    <p>Choose and configure your preferred AI model (OpenAI, HuggingFace, etc.).</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Add Memory</h3>
+                    <p>Implement conversation memory to maintain context throughout the chat.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Deploy & Integrate</h3>
+                    <p>Deploy your chatbot and integrate it into your website or application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="author" class="author-section">
+        <div class="container">
+            <div class="author-content">
+                <h2>Designed and Developed by</h2>
+                <div class="author-info">
+                    <h3>
+                        <div class="glitch-wrapper">
+                            <div class="glitch" data-text="Hossam Ahmed">Hossam Ahmed</div>
+                        </div>
+                    </h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Hossam-Ahmed-031" target="_blank" class="social-link">
+                            <div class="glitch-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hossam-ahmed-b79a932b1/" target="_blank" class="social-link">
+                            <div class="glitch-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61568085357616" target="_blank" class="social-link">
+                            <div class="glitch-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Flowise. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+   <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "18177441-af11-4317-b245-9fee70fb9bad",
+        apiHost: "http://localhost:3000",
+    })
+</script>
+</body>
+</html>
